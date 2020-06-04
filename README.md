@@ -1,24 +1,18 @@
-# hello-world
+# UW League Club Website
 
-## Project setup
-```
-npm install
-```
+https://uw-league-club.web.app/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Home
+<img src="https://imgur.com/F5A1eeo">
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Events
+<img src="https://imgur.com/OoC8Zj0">
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Highlights
+<img src="https://imgur.com/pi5JT8I">
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Gallery
+<img src="https://imgur.com/ZAxNCTr">
+
+## Login
+<img src="https://imgur.com/3xOad7D">
