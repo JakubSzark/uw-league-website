@@ -1,0 +1,56 @@
+.slideshow {
+    height: 75vh;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.officers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(var(--text-color) 40%, var(--accent-color));
+    padding: 1rem;
+    gap: 1rem;
+
+    align-items: center;
+}
+
+.officers img {
+    border-radius: 5px;
+}
+
+.officers .caption-image {
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.officers h1 {
+    grid-column: 1 / 4;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.mission {
+    background: var(--accent-color);
+    padding-bottom: 3rem;
+}
+
+.mission h1 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.mission p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 35px;
+    padding: 0 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .officers {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .officers h1 {
+        grid-column: 1 / 2;
+    }
+}

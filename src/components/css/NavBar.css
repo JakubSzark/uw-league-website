@@ -1,0 +1,117 @@
+header {
+    height: 4rem;
+    background: var(--bg-color);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    border-bottom: 2px solid var(--accent-color);
+    box-shadow: 0px 5px 16px var(--shadow-color);
+
+    padding: 0 1rem;
+}
+
+nav, .links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.links {
+    width: 100%;
+    justify-content: center;
+    z-index: 100;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    background: none;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+    height: 100%;
+}
+
+button:hover, button:disabled {
+    cursor: pointer;
+    border-bottom: 3px solid var(--accent-color);
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.1s ease 0s;
+}
+
+.burger {
+    display: none;
+}
+
+.logo, .burger {
+    height: 2.5rem;
+}
+
+.logo:hover, .burger:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.login {
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    justify-self: flex-end;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.login:hover {
+    cursor: pointer;
+    background: rgb(101, 209, 238);
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        justify-content: flex-end;
+        grid-column: 3 / 4;
+    }
+
+    nav:hover .links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: auto;
+        top: 4rem;
+        right: -1rem;
+
+        background: var(--bg-color);
+        width: 50vw;
+    }
+
+    button {
+        padding: 1rem 1rem;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    button:hover, button:disabled {
+        border-bottom: 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .login {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: center;
+    }
+}
+

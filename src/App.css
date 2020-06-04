@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+:root {
+    /* Main Colors */
+    --bg-color: rgb(18, 18, 18);
+    --accent-color: rgb(11, 196, 224);
+    --text-color: rgb(249, 249, 249);
+
+    /* Sub Colors */
+    --lighter-bg-color: rgb(32, 32, 32);
+
+    /* Box Shadowing */
+    --shadow-color: rgba(11, 196, 224, 0.4);
+
+    /* Background for wide screens */
+    background: url("assets/bg.png") fixed;
+}
+
+body {
+    max-width: 1920px;
+    overflow-y: scroll;
+    margin: 0 auto;
+
+    background: linear-gradient(var(--lighter-bg-color),
+        var(--bg-color));
+}
+
+#app {
+    min-height: 100vh;
+}
+
+/* Global Animations */
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+/* Global Classes */
+
+.fullscreen {
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(18, 18, 18, 0.9);
+    z-index: 1000;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--lighter-bg-color);
+}

@@ -1,0 +1,58 @@
+main {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 1rem 3rem;
+}
+
+label {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+select {
+    background: rgb(8, 8, 8);
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+.controls {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+}
+
+.controls button {
+    background: rgb(8, 8, 8);
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+.controls button:hover {
+    cursor: pointer;
+    background: rgb(64, 64, 64);
+}
+
+.images {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-flow: dense;
+    gap: 1rem;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.images img:hover {
+    cursor: zoom-in;
+    border: 1px solid var(--accent-color);
+}
